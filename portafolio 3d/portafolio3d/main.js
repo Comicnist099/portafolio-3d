@@ -184,7 +184,7 @@ function animateLights() {
 
 // Inicia la animación
 
-let pointLight2 = new THREE.PointLight(0xff7000, 1, 1.5);
+let pointLight2 = new THREE.PointLight(0xff7000, 1, 8.5);
 pointLight2.position.set(-1.6, -.2, 1.2);
 scene.add(pointLight2);
 
@@ -203,8 +203,6 @@ cube.receiveShadow = true; // Permitir que el cubo reciba sombras
 scene.add(cube);
 
 camera.position.z = 5;
-
-
 
 const animate = function () {
   requestAnimationFrame(animate);
